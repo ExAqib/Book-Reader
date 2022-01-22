@@ -120,7 +120,7 @@ public class Login extends AppCompatActivity {
                 }
                 else
                 {
-                    user_email.setError("This Email Does not Exist");
+                    user_email.setError("Your Email Does not Exist");
                     user_email.setText(null);
                     Toast.makeText(Login.this,"Email Does not exists",Toast.LENGTH_SHORT).show();
 
