@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rv"
+    tools:context=".Login">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/loginToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        tools:targetApi="lollipop"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        >
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/loginToolbar"
+        >
+
+    <TextView
+        android:id="@+id/i"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="LOGIN"
+        android:textColor="@color/black"
+        android:textSize="47sp"
+        android:textStyle="italic"
+
+        >
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/user_roll_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/i"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_email_icom"
+        android:drawableLeft="@drawable/custom_email_icom"
+
+        android:drawablePadding="7dp"
+        android:hint="User Name"
+        android:maxLines="1"
+        android:paddingStart="12dp"
+        android:paddingLeft="12dp"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/user_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/user_roll_number"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:drawableLeft="@drawable/custom_lock_icon"
+        android:drawablePadding="7dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+
+        android:maxLength="8"
+        android:maxLines="1"
+        android:paddingStart="12dp"
+        android:paddingLeft="12dp"
+        android:selectAllOnFocus="true"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/user_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:enabled="false"
+        android:text="LOGIN"
+        android:textSize="27sp"
+
+
+        />
+
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:text="Not Registered! Click Here"
+
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal"
+
+        >
+
+    </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

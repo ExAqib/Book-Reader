@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Dashboard"
+        android:id="@+id/dashboard"
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item
+        android:title="Post Book"
+        android:id="@+id/book"
+        android:icon="@drawable/ic_baseline_menu_book_24"/>
+    <item
+        android:title="Logout"
+        android:id="@+id/log_out"
+        android:icon="@drawable/ic_baseline_settings_24"
+        />
+    <item
+        android:title="Profile"
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_accessibility_24"
+        />
+
+</menu>

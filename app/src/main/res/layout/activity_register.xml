@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/registerToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        tools:targetApi="lollipop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/registerToolbar"
+        android:background="@drawable/app_backgroud"
+
+        >
+
+        <TextView
+
+            android:id="@+id/temp_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:text="Sign Up!"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/get_user_image"
+
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/temp_signin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/image_view"
+
+           />
+
+        <EditText
+
+            android:id="@+id/user_name"
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/get_user_image"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/light_blue"
+            android:enabled="true"
+            android:hint="First Name"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black">
+
+        </EditText>
+
+        <EditText
+
+            android:id="@+id/roll_no"
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/user_name"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/light_blue"
+            android:hint="User Name"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black">
+
+        </EditText>
+
+        <EditText
+
+            android:id="@+id/user_phone"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/roll_no"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/light_blue"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black">
+
+        </EditText>
+
+        <EditText
+
+            android:id="@+id/user_password"
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/user_phone"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/light_blue"
+            android:hint="Password"
+            android:inputType="textVisiblePassword"
+            android:maxLength="8"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+
+
+           />
+
+        <EditText
+
+            android:id="@+id/repeat_password"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/user_password"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/light_blue"
+            android:enabled="true"
+
+            android:hint="Repeat Password"
+            android:inputType="textVisiblePassword"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+
+        <Button
+            android:id="@+id/sign_up_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/repeat_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="50dp"
+            android:enabled="false"
+            android:text="SIGN UP"
+            android:textColor="@color/black"
+            android:textSize="27sp"/>
+
+        <TextView
+
+            android:id="@+id/already_registered"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/sign_up_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:text="Already Registerd! Click here to login"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+
+            >
+
+        </TextView>
+
+
+    </RelativeLayout>
+</RelativeLayout>

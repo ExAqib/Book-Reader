@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:id="@+id/profileToolbar"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_below="@+id/profileToolbar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/editPicture"
+        android:src="@drawable/image_view"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/floatingButton"
+        android:layout_alignBottom="@+id/editPicture"
+        android:layout_alignRight="@+id/editPicture"
+        android:layout_marginRight="-10dp"
+        android:elevation="5dp"
+        android:background="@color/darker_grey"
+        android:foreground="@drawable/ic_baseline_photo_camera_24"
+        android:layout_alignEnd="@+id/editPicture"
+        android:layout_marginEnd="-10dp" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editPicture"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="Name"
+        android:textSize="17sp"
+        android:id="@+id/tempNameTV"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tempNameTV"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="User Name"
+        android:textSize="17sp"
+        android:id="@+id/tempPhoneNumTV"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tempPhoneNumTV"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Phone"
+        android:textSize="17sp"
+        android:id="@+id/tempEmailTV"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tempEmailTV"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Password"
+        android:textSize="17sp"
+        android:id="@+id/tempPasswordTV"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/editPicture"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tempNameTV"
+        android:text="User Name"
+        android:textSize="17sp"
+        android:id="@+id/editName"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/tempNameTV"
+        android:layout_marginEnd="20dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editName"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tempEmailTV"
+        android:text="User Name"
+        android:textSize="17sp"
+        android:id="@+id/editMail"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/tempEmailTV"
+        android:layout_marginEnd="20dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/editMail"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tempPhoneNumTV"
+        android:text="User Phone"
+        android:textSize="17sp"
+        android:id="@+id/editPhone"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/tempPhoneNumTV"
+        android:layout_marginEnd="20dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editPhone"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tempPasswordTV"
+        android:text="User Password"
+        android:textSize="17sp"
+        android:id="@+id/editPassword"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/tempPasswordTV"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <Button
+        android:id="@+id/profileUpdateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="UPDATE"
+        />
+
+
+</RelativeLayout>

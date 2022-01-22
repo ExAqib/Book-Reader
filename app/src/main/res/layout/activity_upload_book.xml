@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".uploadBook">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:targetApi="lollipop"
+        android:id="@+id/upload_book_toolbar"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        android:background="@color/purple_500" />
+
+    <TextView
+        android:id="@+id/tempTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/upload_book_toolbar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:text="Enter Book Details"
+        android:textSize="25sp"
+
+        android:layout_centerHorizontal="true"
+
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/getBookAuthorName"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tempTitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/tempAuthor"
+        android:padding="5dp"
+        android:hint="Enter Author Name"
+
+        android:textSize="20sp"
+        >
+    </EditText>
+
+    <TextView
+        android:id="@+id/tempAuthor"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tempTitle"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:text="Author Name:"
+        android:textSize="20sp"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/getBookName"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/getBookAuthorName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/tempAuthor"
+        android:padding="5dp"
+        android:hint="Enter Book Name"
+        android:textSize="20sp"
+        >
+    </EditText>
+
+    <TextView
+        android:id="@+id/tempBook"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tempAuthor"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:text="Book Name:"
+        android:textSize="20sp"
+        >
+    </TextView>
+
+
+
+
+
+
+
+
+
+
+    <Spinner
+        android:id="@+id/spinnerGetGenre"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/getBookName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/tempGenre"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@+id/tempGenre">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/tempGenre"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tempBook"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Select Genre:"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tempPhone"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tempGenre"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Phone Num:"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/getPhone"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/spinnerGetGenre"
+        android:layout_toRightOf="@+id/tempPhone"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Phone Number"
+        android:maxLength="11"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/chooseLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Logo"
+        android:layout_below="@+id/tempPhone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+
+        >
+
+    </Button>
+
+    <TextView
+        android:id="@+id/imageName"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/getPhone"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/chooseLogo"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="No logo selected"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:gravity="start"
+        >
+
+    </TextView>
+
+
+    <Button
+        android:id="@+id/choosePdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="choose pdf"
+        android:layout_below="@+id/chooseLogo"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+
+        >
+
+    </Button>
+
+    <TextView
+        android:id="@+id/fileName"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/imageName"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/choosePdf"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="No file selected"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:gravity="start"
+        >
+
+    </TextView>
+
+
+    <Button
+        android:id="@+id/UploadBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:layout_below="@+id/fileName"
+        android:enabled="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+    </Button>
+
+</RelativeLayout>
