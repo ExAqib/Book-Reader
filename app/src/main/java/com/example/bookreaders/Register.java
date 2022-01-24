@@ -258,6 +258,7 @@ public class Register extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot)
             {
+
                 if(snapshot.hasChild(rollnum))
                 {
                     roll_no.setError("This Email is already registered");
