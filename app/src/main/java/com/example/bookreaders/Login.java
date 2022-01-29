@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
@@ -44,6 +45,8 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        checkDataInSharedPreferences ();
 
         // Set the dimensions of the sign-in button.
         SignInButton signInButton = findViewById(R.id.sign_in_button);
@@ -185,6 +188,7 @@ public class Login extends AppCompatActivity {
                         Intent i = new Intent(Login.this, LoggedIn.class);
                         i.putExtra("EmailPassed", roll);
                         Log.d("tag", "going to Logged In Activity");
+                        saveDataInSharedPreference(roll);
                         startActivity(i);
                     } else {
                         user_password.setError("Password Incorrect");
@@ -207,6 +211,37 @@ public class Login extends AppCompatActivity {
             }
         });
     }
+
+    private void saveDataInSharedPreference(String roll) {
+        Log.d("TAG","Saving data in shared preferences");
+        SharedPreferences sp = getSharedPreferences("users",MODE_PRIVATE);
+        SharedPreferences.Editor ed=sp.edit();
+        ed.putString("userName",roll);
+        ed.commit();
+
+        Log.d("TAG","Dta committed in shared preferences");
+
+    }
+
+    private void checkDataInSharedPreferences ()
+    {
+        SharedPreferences sp = getSharedPreferences("users",MODE_PRIVATE);
+        if(sp.contains("userName"))
+        {
+           String user =sp.getString("userName","");
+           Log.d("TAG","User found in shared preferences i.e. "+user);
+           Intent i = new Intent(Login.this,LoggedIn.class);
+           i.putExtra("EmailPassed",user);
+           Log.d("tag", "going to Logged In Activity");
+            startActivity(i);
+        }
+        else
+        {
+            Log.d("TAG","No User found, in shared preferences");
+
+        }
+    }
+
 
     private void SaveRecord(String name, String email, String phone, String password, String ImageUrl) {
 
@@ -233,6 +268,7 @@ public class Login extends AppCompatActivity {
                 Toast.makeText(Login.this, "Successfully Registered", Toast.LENGTH_LONG).show();
                 Log.d("TAG", "Successfully Registered");
                 Intent i = new Intent(Login.this, LoggedIn.class);
+                saveDataInSharedPreference(name);
                 i.putExtra("EmailPassed", name);
                 Log.d("tag", "going to Logged In Activity");
                 startActivity(i);

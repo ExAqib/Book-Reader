@@ -37,7 +37,6 @@
         android:text="LOGIN"
         android:textColor="@color/black"
         android:textSize="47sp"
-        android:textStyle="italic"
 
         >
 
@@ -99,8 +98,7 @@
         android:enabled="false"
         android:text="LOGIN"
         android:textSize="27sp"
-
-
+        android:elevation="50dp"
         />
 
 
@@ -119,7 +117,8 @@
         android:textSize="20sp"
         android:textStyle="normal"
 
-        >
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="25dp">
 
     </TextView>
         <com.google.android.gms.common.SignInButton
@@ -127,6 +126,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/user_login_btn"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+
             />
 
     </RelativeLayout>
