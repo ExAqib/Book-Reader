@@ -144,13 +144,12 @@ public class poetryFragment extends Fragment {
             }
         };
 
-
         final DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Books");
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 int i = Integer.parseInt(String.valueOf(snapshot.getChildrenCount()));
-                Log.d("tag", "Total boos are " + i);
+                Log.d("tag", "Total books are " + i);
                 if (i == 0) {
                     Toast.makeText(getContext(), "No Book Found", Toast.LENGTH_LONG).show();
                     progress.dismiss();
@@ -162,6 +161,7 @@ public class poetryFragment extends Fragment {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
+                Log.d("TAG", "onCanceled Error occurred i.e  "+error);
 
             }
         });

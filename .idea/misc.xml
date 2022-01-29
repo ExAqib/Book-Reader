@@ -22,7 +22,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/aqibn/AndroidStudioProjects/BookReaders/app/src/main/res/layout-v21/single_row_book.xml" value="0.14895833333333333" />
         <entry key="..\:/Users/aqibn/AndroidStudioProjects/BookReaders/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/aqibn/AndroidStudioProjects/BookReaders/app/src/main/res/layout/fragment_drama.xml" value="0.1" />
+        <entry key="..\:/Users/aqibn/AndroidStudioProjects/BookReaders/app/src/main/res/layout/fragment_poetry.xml" value="0.1" />
+        <entry key="..\:/Users/aqibn/AndroidStudioProjects/BookReaders/app/src/main/res/layout/single_row_book.xml" value="0.22" />
       </map>
     </option>
   </component>
