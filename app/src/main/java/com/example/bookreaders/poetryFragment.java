@@ -96,15 +96,6 @@ public class poetryFragment extends Fragment {
 
     @Override
     public void onStart() {
-        ProgressDialog progress = new ProgressDialog(getContext());
-        progress.setTitle("Getting Books");
-        progress.setMessage("Please wait");
-        progress.setCanceledOnTouchOutside(false);
-        progress.show();
-        Log.d("tag", "This is Poetry Progress bar (Start)");
-
-
-
         super.onStart();
 
         FirebaseRecyclerOptions<BookDetails> options = new FirebaseRecyclerOptions.Builder<BookDetails>()
@@ -119,9 +110,6 @@ public class poetryFragment extends Fragment {
                 String Author = "by "+book.getAuthorName();
                 dataViewHolder.nameOfAuthor.setText(Author);
                 Glide.with(getContext()).load(book.getLogoUrl()).placeholder(R.drawable.book_logo).into(dataViewHolder.imageOfBook);
-
-                progress.dismiss();
-                Log.d("tag", "This is Poetry Progress bar (End)");
 
                 dataViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -152,7 +140,7 @@ public class poetryFragment extends Fragment {
                 Log.d("tag", "Total books are " + i);
                 if (i == 0) {
                     Toast.makeText(getContext(), "No Book Found", Toast.LENGTH_LONG).show();
-                    progress.dismiss();
+
                 } else {
                     recyclerView.setAdapter(adapter);
                     adapter.startListening();

@@ -88,14 +88,6 @@ public class dramaFragment extends Fragment {
 
 
     public void onStart() {
-        ProgressDialog progress = new ProgressDialog(getContext());
-        progress.setTitle("Getting Books");
-        progress.setMessage("Please wait..");
-        progress.setCanceledOnTouchOutside(false);
-        progress.show();
-
-        Log.d("tag","This is drama progress bar (Start)");
-
         super.onStart();
 
         FirebaseRecyclerOptions<BookDetails> options = new FirebaseRecyclerOptions.Builder<BookDetails>()
@@ -142,13 +134,11 @@ public class dramaFragment extends Fragment {
                 Log.d("tag", "Total boos are " + i);
                 if (i == 0) {
                     Toast.makeText(getContext(), "No Book Found", Toast.LENGTH_LONG).show();
-                    progress.dismiss();
+
                 } else {
                     recyclerView.setAdapter(adapter);
                     adapter.startListening();
                 }
-                Log.d("tag","This is drama progress bar (End)");
-                progress.dismiss();
             }
 
             @Override
