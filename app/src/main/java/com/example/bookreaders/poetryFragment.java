@@ -107,7 +107,7 @@ public class poetryFragment extends Fragment {
             protected void onBindViewHolder(@NonNull DataAdapter dataViewHolder, int i, @NonNull final BookDetails book) {
 
                 dataViewHolder.nameOfBook.setText(book.getBookName());
-                String Author = "by "+book.getAuthorName();
+                String Author = book.getAuthorName();
                 dataViewHolder.nameOfAuthor.setText(Author);
                 Glide.with(getContext()).load(book.getLogoUrl()).placeholder(R.drawable.book_logo).into(dataViewHolder.imageOfBook);
 
