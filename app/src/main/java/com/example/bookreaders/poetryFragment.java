@@ -133,6 +133,7 @@ public class poetryFragment extends Fragment {
         };
 
         final DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Books");
+
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -150,13 +151,8 @@ public class poetryFragment extends Fragment {
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 Log.d("TAG", "onCanceled Error occurred i.e  "+error);
-
             }
         });
-
-
     }
-
-
 
 }
