@@ -22,16 +22,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/92317/AndroidStudioProjects/Book-Reader/app/src/main/res/layout/activity_edit_profile.xml" value="0.22" />
+        <entry key="..\:/Users/92317/AndroidStudioProjects/Book-Reader/app/src/main/res/layout/activity_logged_in.xml" value="0.25" />
+        <entry key="..\:/Users/92317/AndroidStudioProjects/Book-Reader/app/src/main/res/layout/activity_login.xml" value="0.15052083333333333" />
+        <entry key="..\:/Users/92317/AndroidStudioProjects/Book-Reader/app/src/main/res/layout/activity_show_p_d_f.xml" value="0.2" />
         <entry key="..\:/Users/aqibn/AndroidStudioProjects/BookReaders/app/src/main/res/layout-v21/single_row_book.xml" value="0.14895833333333333" />
-        <entry key="..\:/Users/aqibn/AndroidStudioProjects/BookReaders/app/src/main/res/layout/activity_logged_in.xml" value="0.1" />
         <entry key="..\:/Users/aqibn/AndroidStudioProjects/BookReaders/app/src/main/res/layout/activity_login.xml" value="0.1" />
-        <entry key="..\:/Users/aqibn/AndroidStudioProjects/BookReaders/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
-        <entry key="..\:/Users/aqibn/AndroidStudioProjects/BookReaders/app/src/main/res/layout/activity_upload_book.xml" value="0.1" />
         <entry key="..\:/Users/aqibn/AndroidStudioProjects/BookReaders/app/src/main/res/layout/fragment_drama.xml" value="0.1" />
-        <entry key="..\:/Users/aqibn/AndroidStudioProjects/BookReaders/app/src/main/res/layout/fragment_fiction.xml" value="0.1" />
         <entry key="..\:/Users/aqibn/AndroidStudioProjects/BookReaders/app/src/main/res/layout/fragment_poetry.xml" value="0.1" />
-        <entry key="..\:/Users/aqibn/AndroidStudioProjects/BookReaders/app/src/main/res/layout/single_row_book.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/aqibn/AndroidStudioProjects/BookReaders/app/src/main/res/menu/icons.xml" value="0.12" />
+        <entry key="..\:/Users/aqibn/AndroidStudioProjects/BookReaders/app/src/main/res/layout/single_row_book.xml" value="0.22" />
       </map>
     </option>
   </component>

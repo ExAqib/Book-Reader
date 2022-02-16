@@ -8,14 +8,14 @@
     tools:context=".showPDF"
     android:scrollbars="vertical"
     >
+
     <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/show_pdf_toolbar"
-        android:id="@+id/pdfView"
-        android:background="@color/white"
-        >
-    </com.github.barteksc.pdfviewer.PDFView>
+        android:layout_marginTop="2dp"
+        android:background="@color/white"></com.github.barteksc.pdfviewer.PDFView>
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
