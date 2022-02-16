@@ -94,7 +94,7 @@ public class dramaFragment extends Fragment {
         progress.setCanceledOnTouchOutside(false);
         progress.show();
 
-        Log.d("tag","This is drama progress bar (Start)");
+        Log.d("tag","drama progress bar (Start)");
 
         super.onStart();
 
