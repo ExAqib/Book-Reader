@@ -52,11 +52,10 @@
         </com.google.android.material.tabs.TabLayout>
 
         <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/tabLayout"
-            android:id="@+id/viewPager"
-            />
+            android:layout_below="@+id/tabLayout" />
 
 
     </RelativeLayout>

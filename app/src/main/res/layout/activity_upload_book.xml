@@ -23,8 +23,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginStart="10dp"
         android:padding="5dp"
-        android:textColor="@color/black"
         android:textStyle="italic"
+        android:textColor = "?android:textColorPrimary"
         android:text="Enter Book Details"
         android:textSize="25sp"
 
@@ -61,7 +61,6 @@
         android:layout_marginLeft="10dp"
         android:layout_marginStart="10dp"
         android:padding="5dp"
-        android:textColor="@color/black"
         android:text="Author Name:"
         android:textSize="20sp"
         >
@@ -93,7 +92,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginStart="10dp"
         android:padding="5dp"
-        android:textColor="@color/black"
+
         android:text="Book Name:"
         android:textSize="20sp"
         >
@@ -133,7 +132,6 @@
         android:layout_marginTop="10dp"
         android:text="Select Genre:"
         android:padding="5dp"
-        android:textColor="@color/black"
         android:textSize="20sp">
 
     </TextView>
@@ -148,7 +146,6 @@
         android:layout_marginTop="10dp"
         android:text="Phone Num:"
         android:padding="5dp"
-        android:textColor="@color/black"
         android:textSize="20sp">
 
     </TextView>
@@ -168,7 +165,6 @@
         android:maxLength="11"
         android:inputType="phone"
         android:padding="5dp"
-        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="normal"
         >
@@ -202,7 +198,6 @@
         android:layout_marginTop="10dp"
         android:text="No logo selected"
         android:padding="5dp"
-        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="normal"
         android:gravity="start"
@@ -238,7 +233,6 @@
         android:layout_marginTop="10dp"
         android:text="No file selected"
         android:padding="5dp"
-        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="normal"
         android:gravity="start"
