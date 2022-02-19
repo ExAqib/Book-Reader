@@ -1,6 +1,10 @@
 plugins {
+    //OneSignal's
+    id 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
     id 'com.android.application'
     id 'com.google.gms.google-services'
+
 }
 
 android {
@@ -40,8 +44,8 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-
-
+    //One Signal's
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
 
     //////////FirebaseConnection
     implementation platform('com.google.firebase:firebase-bom:26.2.0')
