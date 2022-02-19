@@ -9,11 +9,10 @@
     >
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/profileToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/purple_500"
-        android:id="@+id/profileToolbar"
-        />
+        android:background="@color/purple_500" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_below="@+id/profileToolbar"
@@ -86,19 +85,19 @@
         />
 
     <EditText
+        android:id="@+id/editName"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginRight="20dp"
         android:layout_below="@+id/editPicture"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/tempNameTV"
         android:layout_toRightOf="@+id/tempNameTV"
         android:text="User Name"
-        android:textSize="17sp"
-        android:id="@+id/editName"
-        android:layout_marginStart="20dp"
-        android:layout_toEndOf="@+id/tempNameTV"
-        android:layout_marginEnd="20dp" />
+        android:textSize="17sp" />
     <TextView
         android:layout_width="match_parent"
         android:layout_marginRight="20dp"

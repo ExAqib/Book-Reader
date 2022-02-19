@@ -88,6 +88,14 @@ public class dramaFragment extends Fragment {
 
 
     public void onStart() {
+        ProgressDialog progress = new ProgressDialog(getContext());
+        progress.setTitle("Getting Books");
+        progress.setMessage("Please wait..");
+        progress.setCanceledOnTouchOutside(false);
+        progress.show();
+
+        Log.d("tag","This is drama progress bar (Start)");
+
         super.onStart();
 
         FirebaseRecyclerOptions<BookDetails> options = new FirebaseRecyclerOptions.Builder<BookDetails>()
@@ -99,7 +107,7 @@ public class dramaFragment extends Fragment {
             protected void onBindViewHolder(@NonNull DataAdapter dataViewHolder, int i, @NonNull final BookDetails book) {
 
                 dataViewHolder.nameOfBook.setText(book.getBookName());
-                String Author = book.getAuthorName();
+                String Author = "by "+book.getAuthorName();
                 dataViewHolder.nameOfAuthor.setText(Author);
                 Glide.with(getContext()).load(book.getLogoUrl()).placeholder(R.drawable.book_logo).into(dataViewHolder.imageOfBook);
 
@@ -134,11 +142,13 @@ public class dramaFragment extends Fragment {
                 Log.d("tag", "Total boos are " + i);
                 if (i == 0) {
                     Toast.makeText(getContext(), "No Book Found", Toast.LENGTH_LONG).show();
-
+                    progress.dismiss();
                 } else {
                     recyclerView.setAdapter(adapter);
                     adapter.startListening();
                 }
+                Log.d("tag","This is drama progress bar (End)");
+                progress.dismiss();
             }
 
             @Override
